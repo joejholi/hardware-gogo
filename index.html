@@ -700,9 +700,15 @@
       </div>
       <a href="https://mall.iopenmall.tw/013114/" target="_blank" style="color:var(--orange);font-size:14px;text-decoration:none;font-weight:700;white-space:nowrap;">查看全部商品 &rarr;</a>
     </div>
-    <div class="products-grid">
+    <div class="brand-filters">
+      <button class="brand-filter active" onclick="filterProducts('all')">全部</button>
+      <button class="brand-filter" onclick="filterProducts('plier')">鉗子</button>
+      <button class="brand-filter" onclick="filterProducts('hex')">六角板手</button>
+      <button class="brand-filter" onclick="filterProducts('other')">其他工具</button>
+    </div>
+    <div class="products-grid" id="productsGrid">
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407022244" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407022244" target="_blank" class="product-card" data-cat="plier">
         <div class="product-card-header">
           <span class="product-rank top3">1</span>
           <span class="product-name">斜口鉗 6" 塑膠 PL-726 KEIBA</span>
@@ -714,7 +720,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407024724" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407024724" target="_blank" class="product-card" data-cat="plier">
         <div class="product-card-header">
           <span class="product-rank top3">2</span>
           <span class="product-name">斜口鉗 5" 電子 MN-A05 KEIBA</span>
@@ -726,7 +732,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311409189154" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311409189154" target="_blank" class="product-card" data-cat="other">
         <div class="product-card-header">
           <span class="product-rank top3">3</span>
           <span class="product-name">迷你棘輪板手組 39件組 WERA</span>
@@ -738,7 +744,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407836496" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407836496" target="_blank" class="product-card" data-cat="other">
         <div class="product-card-header">
           <span class="product-rank normal">4</span>
           <span class="product-name">鐵皮剪 白鐵 日式彈簧 日新</span>
@@ -750,7 +756,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407026451" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407026451" target="_blank" class="product-card" data-cat="plier">
         <div class="product-card-header">
           <span class="product-rank normal">5</span>
           <span class="product-name">斜口鉗 8" 電工 NH-228 KEIBA</span>
@@ -762,7 +768,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407022891" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407022891" target="_blank" class="product-card" data-cat="plier">
         <div class="product-card-header">
           <span class="product-rank normal">6</span>
           <span class="product-name">斜口鉗 7" 塑膠 PL-727 KEIBA</span>
@@ -774,7 +780,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407026482" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407026482" target="_blank" class="product-card" data-cat="plier">
         <div class="product-card-header">
           <span class="product-rank normal">7</span>
           <span class="product-name">斜口鉗 7" 電工 NH-227 KEIBA</span>
@@ -786,7 +792,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311413720419" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311413720419" target="_blank" class="product-card" data-cat="other">
         <div class="product-card-header">
           <span class="product-rank normal">8</span>
           <span class="product-name">LED 金屬軟管工作燈</span>
@@ -798,7 +804,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311410698454" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311410698454" target="_blank" class="product-card" data-cat="hex">
         <div class="product-card-header">
           <span class="product-rank normal">9</span>
           <span class="product-name">長球起子六角板手 3.0 BONDHUS</span>
@@ -810,7 +816,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407863050" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407863050" target="_blank" class="product-card" data-cat="hex">
         <div class="product-card-header">
           <span class="product-rank normal">10</span>
           <span class="product-name">彩長球六角板手 9PCS (mm) EIGHT</span>
@@ -822,7 +828,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407026487" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407026487" target="_blank" class="product-card" data-cat="plier">
         <div class="product-card-header">
           <span class="product-rank normal">11</span>
           <span class="product-name">斜口鉗 6" 電工 NH-E26 KEIBA</span>
@@ -834,7 +840,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407785414" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407785414" target="_blank" class="product-card" data-cat="hex">
         <div class="product-card-header">
           <span class="product-rank normal">12</span>
           <span class="product-name">長球六角板手 12PCS (in) BONDHUS</span>
@@ -846,7 +852,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407785428" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407785428" target="_blank" class="product-card" data-cat="hex">
         <div class="product-card-header">
           <span class="product-rank normal">13</span>
           <span class="product-name">白長球六角板手 13PCS (in) BONDHUS</span>
@@ -858,7 +864,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407785351" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407785351" target="_blank" class="product-card" data-cat="hex">
         <div class="product-card-header">
           <span class="product-rank normal">14</span>
           <span class="product-name">白長球六角板手 12PCS (in) BONDHUS</span>
@@ -870,7 +876,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311412886460" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311412886460" target="_blank" class="product-card" data-cat="hex">
         <div class="product-card-header">
           <span class="product-rank normal">15</span>
           <span class="product-name">彩長球六角板手 9PCS (in) EIGHT</span>
@@ -882,7 +888,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311410983206" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311410983206" target="_blank" class="product-card" data-cat="hex">
         <div class="product-card-header">
           <span class="product-rank normal">16</span>
           <span class="product-name">長球T型六角板手 5/32" BONDHUS</span>
@@ -894,7 +900,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311411514472" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311411514472" target="_blank" class="product-card" data-cat="other">
         <div class="product-card-header">
           <span class="product-rank normal">17</span>
           <span class="product-name">活動板手 大開口 8~38mm TOP</span>
@@ -906,7 +912,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311411259214" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311411259214" target="_blank" class="product-card" data-cat="hex">
         <div class="product-card-header">
           <span class="product-rank normal">18</span>
           <span class="product-name">白長球六角板手 9PCS (mm) BONDHUS</span>
@@ -918,7 +924,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311410982749" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311410982749" target="_blank" class="product-card" data-cat="hex">
         <div class="product-card-header">
           <span class="product-rank normal">19</span>
           <span class="product-name">長球T型六角板手 3/16" BONDHUS</span>
@@ -930,7 +936,7 @@
         <span class="product-cta">前往賣場選購</span>
       </a>
 
-      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311408275011" target="_blank" class="product-card">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311408275011" target="_blank" class="product-card" data-cat="other">
         <div class="product-card-header">
           <span class="product-rank normal">20</span>
           <span class="product-name">針盤式量錶 10x0.01mm 三豐</span>
@@ -1172,10 +1178,26 @@
 
   // Brand filter
   function filterBrands(country) {
-    document.querySelectorAll('.brand-filter').forEach(function(btn) { btn.classList.remove('active'); });
+    document.querySelectorAll('#brandsGrid').forEach(function(){});
+    var btns = event.target.parentElement.querySelectorAll('.brand-filter');
+    btns.forEach(function(btn) { btn.classList.remove('active'); });
     event.target.classList.add('active');
     document.querySelectorAll('.brand-card').forEach(function(card) {
       if (country === 'all' || card.dataset.country === country) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // Product filter
+  function filterProducts(cat) {
+    var btns = event.target.parentElement.querySelectorAll('.brand-filter');
+    btns.forEach(function(btn) { btn.classList.remove('active'); });
+    event.target.classList.add('active');
+    document.querySelectorAll('#productsGrid .product-card').forEach(function(card) {
+      if (cat === 'all' || card.dataset.cat === cat) {
         card.style.display = '';
       } else {
         card.style.display = 'none';
