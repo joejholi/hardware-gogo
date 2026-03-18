@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五金GOGO購｜台中45年在地專業工具老店｜KEIBA・BONDHUS・WERA 台灣代理</title>
+<meta name="description" content="五金GOGO購，自民國69年起深耕台中，代理超過30個日本、歐洲頂級工具品牌。KEIBA台中、BONDHUS台灣、專業工具台中首選。正品保證、快速出貨。">
+<meta name="keywords" content="KEIBA台中,BONDHUS台灣,專業工具台中,五金工具老店,WERA台灣,日本手工具,五金GOGO購">
+<meta property="og:title" content="五金GOGO購｜台中45年在地專業工具老店">
+<meta property="og:description" content="代理超過30個日本、歐洲頂級工具品牌。正品保證、快速出貨。">
+<meta property="og:image" content="https://mall.iopenmall.tw/website/uploads/website_13114/zh-tw/logo.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="https://mall.iopenmall.tw/website/uploads/website_13114/zh-tw/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --orange: #E8500A;
+    --orange-dark: #B83D07;
+    --orange-light: #FFF0E8;
+    --black: #1A1A1A;
+    --gray: #6B6B6B;
+    --gray-light: #F5F3F0;
+    --white: #FFFFFF;
+    --border: #E0DBD5;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: var(--black);
+    background: var(--white);
+    line-height: 1.7;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--black);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+  .logo-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--orange);
+  }
+  .logo-text {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.05em;
+  }
+  nav { display: flex; gap: 2rem; }
+  nav a {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: var(--orange); }
+
+  /* Hamburger */
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    margin: 5px 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+  .hamburger.active span:nth-child(2) { opacity: 0; }
+  .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+  .mobile-nav {
+    display: none;
+    background: var(--black);
+    padding: 1rem 2rem 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .mobile-nav.active { display: block; }
+  .mobile-nav a {
+    display: block;
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    transition: color 0.2s;
+  }
+  .mobile-nav a:hover { color: var(--orange); }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--black);
+    color: var(--white);
+    padding: 5rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(232,80,10,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    padding: 4px 14px;
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 span { color: var(--orange); }
+  .hero p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--orange);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 14px 28px;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .hero-cta:hover { background: var(--orange-dark); transform: translateY(-1px); }
+  .hero-cta svg { width: 18px; height: 18px; }
+  .hero-image img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+  }
+  .hero-image-fallback {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .hero-image-fallback .icon { font-size: 3rem; opacity: 0.5; }
+  .hero-image-fallback p { color: rgba(255,255,255,0.4); font-size: 13px; text-align: center; margin: 0; }
+
+  /* ── STATS ── */
+  .stats {
+    background: var(--orange);
+    padding: 2.5rem 2rem;
+  }
+  .stats-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 0.08em;
+  }
+
+  /* ── SECTION COMMON ── */
+  section { padding: 5rem 2rem; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 0.75rem;
+  }
+  .section-title {
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 900;
+    color: var(--black);
+    margin-bottom: 1rem;
+  }
+  .section-sub {
+    font-size: 15px;
+    color: var(--gray);
+    max-width: 600px;
+    line-height: 1.8;
+  }
+
+  /* ── HOT PRODUCTS ── */
+  .hot-products { background: var(--white); }
+  .hot-products-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  .product-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.25rem;
+    text-decoration: none;
+    color: var(--black);
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .product-card:hover {
+    border-color: var(--orange);
+    box-shadow: 0 4px 16px rgba(232,80,10,0.1);
+    transform: translateY(-2px);
+  }
+  .product-rank {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .product-rank.top3 { background: var(--orange); }
+  .product-rank.normal { background: var(--gray); }
+  .product-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .product-name {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    flex: 1;
+  }
+  .product-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+  }
+  .product-price {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--orange);
+  }
+  .product-qty {
+    font-size: 12px;
+    color: var(--gray);
+  }
+  .product-cta {
+    display: block;
+    text-align: center;
+    background: var(--orange-light);
+    color: var(--orange);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+  .product-card:hover .product-cta {
+    background: var(--orange);
+    color: var(--white);
+  }
+
+  /* ── BRANDS ── */
+  .brands { background: var(--gray-light); }
+  .brands-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .brand-filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .brand-filter {
+    padding: 6px 16px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--white);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--gray);
+  }
+  .brand-filter:hover, .brand-filter.active {
+    background: var(--orange);
+    color: var(--white);
+    border-color: var(--orange);
+  }
+  .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+  .brand-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .brand-card:hover {
+    border-color: var(--orange);
+    box-shadow: 0 4px 16px rgba(232,80,10,0.1);
+    transform: translateY(-2px);
+  }
+  .brand-card .brand-flag { font-size: 20px; }
+  .brand-card .brand-origin {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--gray);
+    letter-spacing: 0.1em;
+  }
+
+  /* ── WHY US ── */
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .why-card {
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .why-card:hover {
+    border-color: var(--orange);
+    box-shadow: 0 4px 24px rgba(232,80,10,0.08);
+  }
+  .why-num {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--orange-light);
+    line-height: 1;
+    margin-bottom: 0.75rem;
+  }
+  .why-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .why-card p {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+  }
+
+  /* ── CONTACT ── */
+  .contact { background: var(--black); color: var(--white); }
+  .contact .section-title { color: var(--white); }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+    align-items: start;
+  }
+  .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .contact-icon {
+    width: 42px;
+    height: 42px;
+    background: rgba(232,80,10,0.15);
+    border: 1px solid rgba(232,80,10,0.3);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .contact-item-text label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 4px;
+  }
+  .contact-item-text a,
+  .contact-item-text span {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    text-decoration: none;
+  }
+  .contact-item-text a:hover { color: var(--orange); }
+  .contact-item-text small {
+    display: block;
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    margin-top: 2px;
+  }
+
+  .cta-box {
+    background: rgba(232,80,10,0.1);
+    border: 1px solid rgba(232,80,10,0.25);
+    border-radius: 8px;
+    padding: 2.5rem;
+  }
+  .cta-box h3 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+  .cta-box p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--orange);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+    transition: background 0.2s;
+    margin-bottom: 12px;
+    width: 100%;
+    justify-content: center;
+  }
+  .btn-primary:hover { background: var(--orange-dark); }
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.2);
+    letter-spacing: 0.05em;
+    transition: border-color 0.2s;
+    width: 100%;
+    justify-content: center;
+  }
+  .btn-secondary:hover { border-color: rgba(255,255,255,0.5); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #111;
+    padding: 2rem;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  footer a { color: var(--orange); text-decoration: none; }
+
+  /* ── BACK TO TOP ── */
+  .back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 44px;
+    height: 44px;
+    background: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 99;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .back-to-top.visible { opacity: 1; visibility: visible; }
+  .back-to-top:hover { background: var(--orange-dark); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    nav { display: none; }
+    .hamburger { display: block; }
+    .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .hero { padding: 3rem 1.5rem 2.5rem; }
+    .hero-image { display: none; }
+    .stats-inner { grid-template-columns: repeat(2, 1fr); }
+    .products-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .product-card { padding: 1rem; }
+    .product-price { font-size: 16px; }
+    .why-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .brands-grid { grid-template-columns: repeat(3, 1fr); }
+    section { padding: 3rem 1.5rem; }
+  }
+
+  @media (max-width: 480px) {
+    .products-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .brands-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <img class="logo-img"
+           src="https://mall.iopenmall.tw/website/uploads/website_13114/zh-tw/logo.png"
+           alt="五金GOGO購"
+           onerror="this.style.display='none'">
+      <span class="logo-text">五金GOGO購</span>
+    </a>
+    <nav>
+      <a href="#hot">熱銷商品</a>
+      <a href="#brands">代理品牌</a>
+      <a href="#why">關於我們</a>
+      <a href="#contact">聯絡我們</a>
+      <a href="https://mall.iopenmall.tw/013114/" target="_blank" style="color:var(--orange);font-weight:700;">立即購物 &rarr;</a>
+    </nav>
+    <button class="hamburger" onclick="this.classList.toggle('active');document.getElementById('mobileNav').classList.toggle('active')" aria-label="選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#hot" onclick="closeMobileNav()">熱銷商品</a>
+    <a href="#brands" onclick="closeMobileNav()">代理品牌</a>
+    <a href="#why" onclick="closeMobileNav()">關於我們</a>
+    <a href="#contact" onclick="closeMobileNav()">聯絡我們</a>
+    <a href="https://mall.iopenmall.tw/013114/" target="_blank" style="color:var(--orange);">立即購物 &rarr;</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">台中在地老店 &middot; 民國69年創立</div>
+      <h1>專業工具<br><span>一站購足</span><br>品質保證</h1>
+      <p>深耕台中地區超過 45 年，代理日本、歐洲頂級工具品牌。<br>
+         誠信、專業、快速出貨，是我們不變的承諾。</p>
+      <a href="https://mall.iopenmall.tw/013114/" target="_blank" class="hero-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        前往 iOPEN 賣場選購
+      </a>
+    </div>
+    <div class="hero-image">
+      <img src="https://mall.iopenmall.tw/website/uploads/website_13114/zh-tw/web_com_intro_image.png"
+           alt="五金GOGO購店面"
+           onerror="this.parentElement.innerHTML='<div class=\'hero-image-fallback\'><div class=\'icon\'>&#x1f527;</div><p>五金GOGO購<br>台中在地老店</p></div>'">
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-inner">
+    <div>
+      <div class="stat-num">45+</div>
+      <div class="stat-label">年在地經營</div>
+    </div>
+    <div>
+      <div class="stat-num">30+</div>
+      <div class="stat-label">代理品牌</div>
+    </div>
+    <div>
+      <div class="stat-num">980</div>
+      <div class="stat-label">線上商品數</div>
+    </div>
+    <div>
+      <div class="stat-num">5.0</div>
+      <div class="stat-label">買家評分滿分</div>
+    </div>
+  </div>
+</div>
+
+<!-- HOT PRODUCTS -->
+<section class="hot-products" id="hot">
+  <div class="section-inner">
+    <div class="hot-products-header">
+      <div>
+        <div class="section-label">HOT SELLERS</div>
+        <h2 class="section-title">熱銷商品 TOP 20</h2>
+        <p class="section-sub">根據近12個月銷售數據，精選最受歡迎的專業工具。</p>
+      </div>
+      <a href="https://mall.iopenmall.tw/013114/" target="_blank" style="color:var(--orange);font-size:14px;text-decoration:none;font-weight:700;white-space:nowrap;">查看全部商品 &rarr;</a>
+    </div>
+    <div class="products-grid">
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=PL-726" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank top3">1</span>
+          <span class="product-name">斜口鉗 6" 塑膠 PL-726 KEIBA</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$483</span>
+          <span class="product-qty">已售 641 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=MN-A05" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank top3">2</span>
+          <span class="product-name">斜口鉗 5" 電子 MN-A05 KEIBA</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$426</span>
+          <span class="product-qty">已售 292 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=WERA+39" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank top3">3</span>
+          <span class="product-name">迷你棘輪板手組 39件組 WERA</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$2,016</span>
+          <span class="product-qty">已售 42 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=%E9%90%B5%E7%9A%AE%E5%89%AA" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">4</span>
+          <span class="product-name">鐵皮剪 白鐵 日式彈簧 日新</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$794</span>
+          <span class="product-qty">已售 104 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=NH-228" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">5</span>
+          <span class="product-name">斜口鉗 8" 電工 NH-228 KEIBA</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$859</span>
+          <span class="product-qty">已售 84 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=PL-727" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">6</span>
+          <span class="product-name">斜口鉗 7" 塑膠 PL-727 KEIBA</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$591</span>
+          <span class="product-qty">已售 109 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=NH-227" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">7</span>
+          <span class="product-name">斜口鉗 7" 電工 NH-227 KEIBA</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$788</span>
+          <span class="product-qty">已售 46 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=LED+%E5%B7%A5%E4%BD%9C%E7%87%88" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">8</span>
+          <span class="product-name">LED 金屬軟管工作燈</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$513</span>
+          <span class="product-qty">已售 65 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=BONDHUS+3.0" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">9</span>
+          <span class="product-name">長球起子六角板手 3.0 BONDHUS</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$229</span>
+          <span class="product-qty">已售 128 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=EIGHT+%E5%BD%A9%E9%95%B7%E7%90%83+mm" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">10</span>
+          <span class="product-name">彩長球六角板手 9PCS (mm) EIGHT</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$890</span>
+          <span class="product-qty">已售 32 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=NH-E26" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">11</span>
+          <span class="product-name">斜口鉗 6" 電工 NH-E26 KEIBA</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$635</span>
+          <span class="product-qty">已售 43 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=BONDHUS+12PCS+in" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">12</span>
+          <span class="product-name">長球六角板手 12PCS (in) BONDHUS</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$489</span>
+          <span class="product-qty">已售 49 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=BONDHUS+%E7%99%BD%E9%95%B7%E7%90%83+13PCS" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">13</span>
+          <span class="product-name">白長球六角板手 13PCS (in) BONDHUS</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$899</span>
+          <span class="product-qty">已售 26 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=BONDHUS+%E7%99%BD%E9%95%B7%E7%90%83+12PCS" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">14</span>
+          <span class="product-name">白長球六角板手 12PCS (in) BONDHUS</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$730</span>
+          <span class="product-qty">已售 30 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=EIGHT+%E5%BD%A9%E9%95%B7%E7%90%83+in" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">15</span>
+          <span class="product-name">彩長球六角板手 9PCS (in) EIGHT</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$1,191</span>
+          <span class="product-qty">已售 17 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=BONDHUS+T+5%2F32" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">16</span>
+          <span class="product-name">長球T型六角板手 5/32" BONDHUS</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$277</span>
+          <span class="product-qty">已售 71 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=TOP+%E6%B4%BB%E5%8B%95%E6%9D%BF%E6%89%8B" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">17</span>
+          <span class="product-name">活動板手 大開口 8~38mm TOP</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$684</span>
+          <span class="product-qty">已售 28 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=BONDHUS+%E7%99%BD%E9%95%B7%E7%90%83+9PCS+mm" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">18</span>
+          <span class="product-name">白長球六角板手 9PCS (mm) BONDHUS</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$744</span>
+          <span class="product-qty">已售 25 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=BONDHUS+T+3%2F16" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">19</span>
+          <span class="product-name">長球T型六角板手 3/16" BONDHUS</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$280</span>
+          <span class="product-qty">已售 63 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_search&prod_search_word=%E4%B8%89%E8%B1%90+%E9%87%8F%E9%8C%B6" target="_blank" class="product-card">
+        <div class="product-card-header">
+          <span class="product-rank normal">20</span>
+          <span class="product-name">針盤式量錶 10x0.01mm 三豐</span>
+        </div>
+        <div class="product-meta">
+          <span class="product-price">$788</span>
+          <span class="product-qty">已售 22 件</span>
+        </div>
+        <span class="product-cta">前往賣場選購</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="brands" id="brands">
+  <div class="section-inner">
+    <div class="brands-header">
+      <div>
+        <div class="section-label">BRANDS</div>
+        <h2 class="section-title">代理品牌 30+</h2>
+        <p class="section-sub">專注代理職人級專業工具，每個品牌都經過嚴格篩選。</p>
+      </div>
+      <a href="https://mall.iopenmall.tw/013114/" target="_blank" style="color:var(--orange);font-size:14px;text-decoration:none;font-weight:700;white-space:nowrap;">查看全部商品 &rarr;</a>
+    </div>
+    <div class="brand-filters">
+      <button class="brand-filter active" onclick="filterBrands('all')">全部</button>
+      <button class="brand-filter" onclick="filterBrands('JP')">日本</button>
+      <button class="brand-filter" onclick="filterBrands('DE')">德國</button>
+      <button class="brand-filter" onclick="filterBrands('US')">美國</button>
+    </div>
+    <div class="brands-grid" id="brandsGrid">
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=67625" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>KEIBA 馬牌</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=1000034370" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>3.PEAKS 小山</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=67704" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>EIGHT 六角棒</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=70259" target="_blank" class="brand-card" data-country="US">
+        <span class="brand-flag">&#x1f1fa;&#x1f1f8;</span><span>BONDHUS</span><span class="brand-origin">USA</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=70643" target="_blank" class="brand-card" data-country="DE">
+        <span class="brand-flag">&#x1f1e9;&#x1f1ea;</span><span>WERA</span><span class="brand-origin">GERMANY</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=72402" target="_blank" class="brand-card" data-country="DE">
+        <span class="brand-flag">&#x1f1e9;&#x1f1ea;</span><span>WIHA</span><span class="brand-origin">GERMANY</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=1000018099" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>Mitutoyo 三豐</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=67875" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>KANON 中村</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=1000019432" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>KURITA 栗田</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=1000020226" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>MCC 松阪</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=67708" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>TOP トップ工業</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=1000033182" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>NETSUREN</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=67938" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>LOBSTER 蝦牌</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=69961" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>LIGHT</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=67903" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>SUPER TOOL</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=70262" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>ANEX</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=1000035679" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>H.T.D 早坂</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=73834" target="_blank" class="brand-card" data-country="DE">
+        <span class="brand-flag">&#x1f1e9;&#x1f1ea;</span><span>SCHRODER</span><span class="brand-origin">GERMANY</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=73833" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>IKEDA</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=1000034808" target="_blank" class="brand-card" data-country="DE">
+        <span class="brand-flag">&#x1f1e9;&#x1f1ea;</span><span>PFERD</span><span class="brand-origin">GERMANY</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=1000026784" target="_blank" class="brand-card" data-country="US">
+        <span class="brand-flag">&#x1f1fa;&#x1f1f8;</span><span>IRWIN</span><span class="brand-origin">USA</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=1000021182" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>TAJIMA</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=71570" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>TSUNODA</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=1000021932" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>TSUBOSAN 壺三</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=69728" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>TOZE</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=1000020430" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>INHAND</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=1000021183" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>KDS</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=1000042062" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>WISE</span><span class="brand-origin">JAPAN</span>
+      </a>
+      <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=1000042950" target="_blank" class="brand-card" data-country="JP">
+        <span class="brand-flag">&#x1f1ef;&#x1f1f5;</span><span>SUNFLAG</span><span class="brand-origin">JAPAN</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="section-inner">
+    <div class="section-label">ABOUT US</div>
+    <h2 class="section-title">為什麼選擇五金GOGO購？</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01</div>
+        <h3>45年在地老店</h3>
+        <p>自民國69年起深耕台中地區，老客戶口耳相傳，是您最值得信賴的五金夥伴。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02</div>
+        <h3>正品保證</h3>
+        <p>代理日本、歐洲一線品牌工具，全數正品公司貨，提供原廠品質保障。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03</div>
+        <h3>快速出貨</h3>
+        <p>備有現貨庫存，下單後快速出貨。Yahoo拍賣17年未出貨率 0%，說到做到。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04</div>
+        <h3>專業選品</h3>
+        <p>超過30個頂級工具品牌，從手工具、量測儀器到氣動工具，專業工作者的首選。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">05</div>
+        <h3>LINE即時諮詢</h3>
+        <p>不確定哪個工具適合您？加LINE免費諮詢，我們幫您找到最合適的解決方案。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">06</div>
+        <h3>滿分評價</h3>
+        <p>iOPEN Mall 評分 5.0 滿分，每一筆交易都用誠信換取您的信任。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="section-label" style="color:var(--orange)">CONTACT</div>
+    <h2 class="section-title">有任何問題都歡迎詢問</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">&#x1f4f1;</div>
+          <div class="contact-item-text">
+            <label>客服專線</label>
+            <a href="tel:0983218658">0983-218-658</a>
+            <small>歡迎來電詢問</small>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">&#x1f4ac;</div>
+          <div class="contact-item-text">
+            <label>LINE 諮詢</label>
+            <span>搜尋 0983-218-658 加好友</span>
+            <small>LINE ID 即電話號碼</small>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">&#x1f4cd;</div>
+          <div class="contact-item-text">
+            <label>實體店面</label>
+            <span>台中地區</span>
+            <small>在地經營超過45年</small>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">&#x1f550;</div>
+          <div class="contact-item-text">
+            <label>服務時間</label>
+            <span>週一至週六</span>
+            <small>歡迎來電確認營業時間</small>
+          </div>
+        </div>
+      </div>
+      <div class="cta-box">
+        <h3>立即前往線上賣場</h3>
+        <p>超過 980 項專業工具商品，正品保證、快速出貨。現在下單，讓工作更有效率。</p>
+        <a href="https://mall.iopenmall.tw/013114/" target="_blank" class="btn-primary">
+          前往 iOPEN 賣場選購
+        </a>
+        <a href="https://tw.bid.yahoo.com/booth/Y6932867058" target="_blank" class="btn-secondary">
+          Yahoo 拍賣賣場（17年老店）
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 五金GOGO購｜台中在地五金老店，自民國69年起深耕服務。</p>
+  <p style="margin-top:6px">
+    <a href="https://mall.iopenmall.tw/013114/" target="_blank">iOPEN 賣場</a> &middot;
+    <a href="https://tw.bid.yahoo.com/booth/Y6932867058" target="_blank">Yahoo 拍賣</a> &middot;
+    <a href="https://shopee.tw/lan7026" target="_blank">蝦皮賣場</a> &middot;
+    <a href="tel:0983218658">0983-218-658</a>
+  </p>
+</footer>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="回到頂部">&uarr;</button>
+
+<script>
+  // Mobile nav
+  function closeMobileNav() {
+    document.getElementById('mobileNav').classList.remove('active');
+    document.querySelector('.hamburger').classList.remove('active');
+  }
+
+  // Brand filter
+  function filterBrands(country) {
+    document.querySelectorAll('.brand-filter').forEach(function(btn) { btn.classList.remove('active'); });
+    event.target.classList.add('active');
+    document.querySelectorAll('.brand-card').forEach(function(card) {
+      if (country === 'all' || card.dataset.country === country) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // Back to top button
+  window.addEventListener('scroll', function() {
+    var btn = document.getElementById('backToTop');
+    if (window.scrollY > 400) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  });
+
+  // Smooth scroll for anchor links (fallback)
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
