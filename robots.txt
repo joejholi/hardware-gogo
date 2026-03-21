@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joejholi.github.io/hardware-gogo/sitemap.xml
