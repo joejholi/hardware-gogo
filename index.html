@@ -296,6 +296,22 @@
     gap: 16px; margin-bottom: 1.5rem;
   }
   .brand-panel-grid .p-card-img { aspect-ratio: 1/1; }
+  .brand-series-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .brand-series-tag {
+    display: inline-block; padding: 8px 16px;
+    background: var(--primary-light); color: var(--primary);
+    font-size: 12px; font-weight: 700; letter-spacing: 0.05em;
+    border: 1px solid var(--primary); cursor: pointer;
+    transition: all 0.2s; text-decoration: none;
+  }
+  .brand-series-tag:hover { background: var(--primary); color: #fff; }
+  .brand-group-title {
+    font-size: 14px; font-weight: 700; color: var(--primary);
+    margin: 1.5rem 0 0.8rem; padding-bottom: 6px;
+    border-bottom: 2px solid var(--primary);
+    display: inline-block;
+  }
+  .brand-group-title:first-of-type { margin-top: 0; }
   /* 品牌總覽 */
   .brand-intro { display: flex; flex-direction: column; gap: 0; }
   .brand-intro-item {
@@ -838,27 +854,48 @@
         </div>
         <div class="brand-panel" id="panel-keiba">
           <div class="brand-panel-title">KEIBA 馬牌</div>
+          <div class="brand-series-tags">
+            <span class="brand-series-tag" onclick="scrollToGroup('kg-electron')">電子精密系列</span>
+            <span class="brand-series-tag" onclick="scrollToGroup('kg-pl')">PL 塑膠斜口鉗</span>
+            <span class="brand-series-tag" onclick="scrollToGroup('kg-nh')">NH 電工斜口鉗</span>
+            <span class="brand-series-tag" onclick="scrollToGroup('kg-fc')">FC 鉋金系列</span>
+            <span class="brand-series-tag" onclick="scrollToGroup('kg-other')">其他</span>
+          </div>
+          <!-- 電子精密系列 -->
+          <div class="brand-group-title" id="kg-electron">電子精密系列</div>
+          <div class="brand-panel-grid">
+            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407024724" target="_blank" class="p-card">
+              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407024724_3_128242339.jpeg?hash=69348" alt="電子斜口鉗 5&quot; MN-A05" loading="lazy"></div>
+              <div class="p-card-body"><div class="p-card-name">電子斜口鉗 5" MN-A05</div></div>
+            </a>
+            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407024922" target="_blank" class="p-card">
+              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407024922_3_128148772.jpeg?hash=16036" alt="電子尖嘴鉗 6&quot; M-616" loading="lazy"></div>
+              <div class="p-card-body"><div class="p-card-name">電子尖嘴鉗 6" M-616</div></div>
+            </a>
+            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407024837" target="_blank" class="p-card">
+              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407024837_3_128147954.jpeg?hash=6299" alt="彎型電子尖嘴鉗 6&quot; M-616B" loading="lazy"></div>
+              <div class="p-card-body"><div class="p-card-name">彎型電子尖嘴鉗 6" M-616B</div></div>
+            </a>
+          </div>
+          <!-- PL 塑膠斜口鉗系列 -->
+          <div class="brand-group-title" id="kg-pl">PL 塑膠斜口鉗系列</div>
           <div class="brand-panel-grid">
             <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311412218113" target="_blank" class="p-card">
               <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311412218113_3_130389425.jpeg?hash=75569" alt="塑膠斜口鉗 5&quot; PL-725" loading="lazy"></div>
               <div class="p-card-body"><div class="p-card-name">塑膠斜口鉗 5" PL-725</div></div>
             </a>
-            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311410713168" target="_blank" class="p-card">
-              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311410713168_3_128138340.jpeg?hash=75093" alt="膠柄鋼絲鉗 8&quot; PH-108" loading="lazy"></div>
-              <div class="p-card-body"><div class="p-card-name">膠柄鋼絲鉗 8" PH-108</div></div>
+            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407022244" target="_blank" class="p-card">
+              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407022244_3_130389330.jpeg?hash=54730" alt="塑膠斜口鉗 6&quot; PL-726" loading="lazy"></div>
+              <div class="p-card-body"><div class="p-card-name">塑膠斜口鉗 6" PL-726</div></div>
             </a>
-            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311410708293" target="_blank" class="p-card">
-              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311410708293_3_128149503.jpeg?hash=28132" alt="尖細彎型無齒尖嘴鉗 6&quot; HE-D15" loading="lazy"></div>
-              <div class="p-card-body"><div class="p-card-name">尖細彎型無齒尖嘴鉗 6" HE-D15</div></div>
+            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407022891" target="_blank" class="p-card">
+              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407022891_3_130389508.jpeg?hash=90490" alt="塑膠斜口鉗 7&quot; PL-727" loading="lazy"></div>
+              <div class="p-card-body"><div class="p-card-name">塑膠斜口鉗 7" PL-727</div></div>
             </a>
-            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311410690537" target="_blank" class="p-card">
-              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311410690537_3_128149820.jpeg?hash=25166" alt="尖細型無齒尖嘴鉗 6&quot; HE-D05" loading="lazy"></div>
-              <div class="p-card-body"><div class="p-card-name">尖細型無齒尖嘴鉗 6" HE-D05</div></div>
-            </a>
-            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407862131" target="_blank" class="p-card">
-              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407862131_3_128145423.jpeg?hash=25151" alt="膠柄尖嘴鉗 6&quot; T-316" loading="lazy"></div>
-              <div class="p-card-body"><div class="p-card-name">膠柄尖嘴鉗 6" T-316</div></div>
-            </a>
+          </div>
+          <!-- NH 電工斜口鉗系列 -->
+          <div class="brand-group-title" id="kg-nh">NH 電工斜口鉗系列</div>
+          <div class="brand-panel-grid">
             <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407026487" target="_blank" class="p-card">
               <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407026487_3_128209938.jpeg?hash=2873" alt="電工薄刃斜口鉗 6&quot; NH-E26" loading="lazy"></div>
               <div class="p-card-body"><div class="p-card-name">電工薄刃斜口鉗 6" NH-E26</div></div>
@@ -871,6 +908,10 @@
               <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407026451_3_105593967.jpeg?hash=45601" alt="電工薄刃斜口鉗 8&quot; NH-228" loading="lazy"></div>
               <div class="p-card-body"><div class="p-card-name">電工薄刃斜口鉗 8" NH-228</div></div>
             </a>
+          </div>
+          <!-- FC 鉋金系列 -->
+          <div class="brand-group-title" id="kg-fc">FC 鉋金系列</div>
+          <div class="brand-panel-grid">
             <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407026356" target="_blank" class="p-card">
               <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407026356_3_134958884.jpeg?hash=97443" alt="砲金強力斜口鉗 6&quot; FC-206" loading="lazy"></div>
               <div class="p-card-body"><div class="p-card-name">砲金強力斜口鉗 6" FC-206</div></div>
@@ -907,29 +948,29 @@
               <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407024953_3_128151583.jpeg?hash=16853" alt="夜光砲金省力鋼絲鉗 9&quot; FCI-119" loading="lazy"></div>
               <div class="p-card-body"><div class="p-card-name">夜光砲金省力鋼絲鉗 9" FCI-119</div></div>
             </a>
+          </div>
+          <!-- 其他系列 -->
+          <div class="brand-group-title" id="kg-other">其他系列</div>
+          <div class="brand-panel-grid">
+            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311410713168" target="_blank" class="p-card">
+              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311410713168_3_128138340.jpeg?hash=75093" alt="膠柄鋼絲鉗 8&quot; PH-108" loading="lazy"></div>
+              <div class="p-card-body"><div class="p-card-name">膠柄鋼絲鉗 8" PH-108</div></div>
+            </a>
+            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311410708293" target="_blank" class="p-card">
+              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311410708293_3_128149503.jpeg?hash=28132" alt="尖細彎型無齒尖嘴鉗 6&quot; HE-D15" loading="lazy"></div>
+              <div class="p-card-body"><div class="p-card-name">尖細彎型無齒尖嘴鉗 6" HE-D15</div></div>
+            </a>
+            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311410690537" target="_blank" class="p-card">
+              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311410690537_3_128149820.jpeg?hash=25166" alt="尖細型無齒尖嘴鉗 6&quot; HE-D05" loading="lazy"></div>
+              <div class="p-card-body"><div class="p-card-name">尖細型無齒尖嘴鉗 6" HE-D05</div></div>
+            </a>
+            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407862131" target="_blank" class="p-card">
+              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407862131_3_128145423.jpeg?hash=25151" alt="膠柄尖嘴鉗 6&quot; T-316" loading="lazy"></div>
+              <div class="p-card-body"><div class="p-card-name">膠柄尖嘴鉗 6" T-316</div></div>
+            </a>
             <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407024937" target="_blank" class="p-card">
               <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407024937_3_128147119.jpeg?hash=53669" alt="膠柄斜口鉗 6&quot; N-216" loading="lazy"></div>
               <div class="p-card-body"><div class="p-card-name">膠柄斜口鉗 6" N-216</div></div>
-            </a>
-            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407024922" target="_blank" class="p-card">
-              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407024922_3_128148772.jpeg?hash=16036" alt="電子尖嘴鉗 6&quot; M-616" loading="lazy"></div>
-              <div class="p-card-body"><div class="p-card-name">電子尖嘴鉗 6" M-616</div></div>
-            </a>
-            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407024837" target="_blank" class="p-card">
-              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407024837_3_128147954.jpeg?hash=6299" alt="彎型電子尖嘴鉗 6&quot; M-616B" loading="lazy"></div>
-              <div class="p-card-body"><div class="p-card-name">彎型電子尖嘴鉗 6" M-616B</div></div>
-            </a>
-            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407024724" target="_blank" class="p-card">
-              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407024724_3_128242339.jpeg?hash=69348" alt="電子斜口鉗 5&quot; MN-A05" loading="lazy"></div>
-              <div class="p-card-body"><div class="p-card-name">電子斜口鉗 5" MN-A05</div></div>
-            </a>
-            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407022891" target="_blank" class="p-card">
-              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407022891_3_130389508.jpeg?hash=90490" alt="塑膠斜口鉗 7&quot; PL-727" loading="lazy"></div>
-              <div class="p-card-body"><div class="p-card-name">塑膠斜口鉗 7" PL-727</div></div>
-            </a>
-            <a href="https://mall.iopenmall.tw/013114/index.php?action=product_detail&prod_no=P1311407022244" target="_blank" class="p-card">
-              <div class="p-card-img"><img src="https://mall.iopenmall.tw/website/uploads_product/website_13114/P1311407022244_3_130389330.jpeg?hash=54730" alt="塑膠斜口鉗 6&quot; PL-726" loading="lazy"></div>
-              <div class="p-card-body"><div class="p-card-name">塑膠斜口鉗 6" PL-726</div></div>
             </a>
           </div>
           <a href="https://mall.iopenmall.tw/013114/index.php?action=product_sort&prod_sort_ou=67625" target="_blank" class="brand-more">查看全部 KEIBA 商品 →</a>
@@ -1491,6 +1532,14 @@ function resetHeroTimer() {
 }
 
 resetHeroTimer();
+
+function scrollToGroup(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var navH = 64;
+  var top = el.getBoundingClientRect().top + window.pageYOffset - navH - 10;
+  window.scrollTo({top: top, behavior: 'smooth'});
+}
 
 function resetBrands() {
   document.querySelectorAll('.brand-btn').forEach(function(b) { b.classList.remove('active'); });
