@@ -183,6 +183,14 @@
     transition: border-color 0.2s;
   }
   .btn-outline:hover { border-color: rgba(255,255,255,0.7); }
+  .btn-line {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #06C755; color: #fff; text-decoration: none;
+    font-size: 14px; font-weight: 700; padding: 14px 28px;
+    border: none; cursor: pointer; letter-spacing: 0.05em;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .btn-line:hover { background: #05b04c; transform: translateY(-1px); }
 
   /* ── STATS BAR（白底） ── */
   .stats-bar {
@@ -576,22 +584,22 @@
       <span>五金GOGO購</span>
     </a>
     <div class="nav-links">
-      <a href="#products">熱銷商品</a>
       <a href="#brands" onclick="resetBrands()">代理品牌</a>
-      <a href="#about">關於我們</a>
+      <a href="#products">熱銷商品</a>
       <a href="#contact">聯絡我們</a>
       <a href="https://mall.iopenmall.tw/013114/" target="_blank">線上選購</a>
+      <a href="#about">關於我們</a>
     </div>
     <button class="hamburger" onclick="this.classList.toggle('active');document.getElementById('mNav').classList.toggle('active')" aria-label="選單">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="mobile-nav" id="mNav">
-    <a href="#products">熱銷商品</a>
     <a href="#brands" onclick="resetBrands()">代理品牌</a>
-    <a href="#about">關於我們</a>
+    <a href="#products">熱銷商品</a>
     <a href="#contact">聯絡我們</a>
     <a href="https://mall.iopenmall.tw/013114/" target="_blank" style="color:var(--primary)">線上選購 →</a>
+    <a href="#about">關於我們</a>
   </div>
 </nav>
 
@@ -600,52 +608,58 @@
   <div class="hero-slides">
     <div class="hero-slide active" style="background-image:url('measuring tools.jpg')">
       <div class="hero-content">
-        <div class="hero-tag">SINCE 1980 ─ 台中在地老店</div>
+        <div class="hero-tag">BONDHUS・WERA・WIHA・三豐・KEIBA</div>
         <h1>職人的工具箱<br>從這裡開始</h1>
-        <p class="hero-desc">代理日本、歐洲超過 30 個專業工具品牌。<br>45 年來，我們只做一件事 ── 把最好的工具交到你手上。</p>
+        <p class="hero-desc">日本、德國、美國 30 個職人品牌，一站備齊。<br>找不到的工具，歡迎直接 LINE 詢問。</p>
         <div class="hero-buttons">
           <a href="#brands" class="btn-main">探索我們的品牌</a>
-          <a href="https://mall.iopenmall.tw/013114/" target="_blank" class="btn-outline">線上選購</a>
+          <a href="https://line.me/ti/p/~lanholi" target="_blank" class="btn-line">LINE 立即詢問</a>
+          <a href="tel:0983218658" class="btn-outline">撥打電話</a>
         </div>
       </div>
     </div>
     <div class="hero-slide" style="background-image:url('新-3.jpg')">
       <div class="hero-content" style="justify-content:flex-end;padding-bottom:4rem">
         <div class="hero-buttons">
-          <a href="#brands" class="btn-main" onclick="showBrand('eight',document.querySelectorAll('.brand-btn')[3])">探索我們的品牌</a>
-          <a href="https://mall.iopenmall.tw/013114/" target="_blank" class="btn-outline">線上選購</a>
+          <a href="#brands" class="btn-main" onclick="showBrand('eight',document.querySelectorAll('.brand-btn')[1])">探索我們的品牌</a>
+          <a href="https://line.me/ti/p/~lanholi" target="_blank" class="btn-line">LINE 立即詢問</a>
+          <a href="tel:0983218658" class="btn-outline">撥打電話</a>
         </div>
       </div>
     </div>
     <div class="hero-slide" style="background-image:url('新-4.jpg')">
       <div class="hero-content" style="justify-content:flex-end;padding-bottom:4rem">
         <div class="hero-buttons">
-          <a href="#brands" class="btn-main" onclick="showBrand('keiba',document.querySelectorAll('.brand-btn')[0])">探索我們的品牌</a>
-          <a href="https://mall.iopenmall.tw/013114/" target="_blank" class="btn-outline">線上選購</a>
+          <a href="#brands" class="btn-main" onclick="showBrand('keiba',document.querySelectorAll('.brand-btn')[7])">探索我們的品牌</a>
+          <a href="https://line.me/ti/p/~lanholi" target="_blank" class="btn-line">LINE 立即詢問</a>
+          <a href="tel:0983218658" class="btn-outline">撥打電話</a>
         </div>
       </div>
     </div>
     <div class="hero-slide" style="background-image:url('新-5.jpg')">
       <div class="hero-content" style="justify-content:flex-end;padding-bottom:4rem">
         <div class="hero-buttons">
-          <a href="#brands" class="btn-main" onclick="showBrand('wiha',document.querySelectorAll('.brand-btn')[4])">探索我們的品牌</a>
-          <a href="https://mall.iopenmall.tw/013114/" target="_blank" class="btn-outline">線上選購</a>
+          <a href="#brands" class="btn-main" onclick="showBrand('wiha',document.querySelectorAll('.brand-btn')[3])">探索我們的品牌</a>
+          <a href="https://line.me/ti/p/~lanholi" target="_blank" class="btn-line">LINE 立即詢問</a>
+          <a href="tel:0983218658" class="btn-outline">撥打電話</a>
         </div>
       </div>
     </div>
     <div class="hero-slide" style="background-image:url('新-6.jpg')">
       <div class="hero-content" style="justify-content:flex-end;padding-bottom:4rem">
         <div class="hero-buttons">
-          <a href="#brands" class="btn-main" onclick="showBrand('wera',document.querySelectorAll('.brand-btn')[1])">探索我們的品牌</a>
-          <a href="https://mall.iopenmall.tw/013114/" target="_blank" class="btn-outline">線上選購</a>
+          <a href="#brands" class="btn-main" onclick="showBrand('wera',document.querySelectorAll('.brand-btn')[2])">探索我們的品牌</a>
+          <a href="https://line.me/ti/p/~lanholi" target="_blank" class="btn-line">LINE 立即詢問</a>
+          <a href="tel:0983218658" class="btn-outline">撥打電話</a>
         </div>
       </div>
     </div>
     <div class="hero-slide" style="background-image:url('新-7.jpg')">
       <div class="hero-content" style="justify-content:flex-end;padding-bottom:4rem">
         <div class="hero-buttons">
-          <a href="#brands" class="btn-main" onclick="showBrand('top',document.querySelectorAll('.brand-btn')[5])">探索我們的品牌</a>
-          <a href="https://mall.iopenmall.tw/013114/" target="_blank" class="btn-outline">線上選購</a>
+          <a href="#brands" class="btn-main" onclick="showBrand('top',document.querySelectorAll('.brand-btn')[9])">探索我們的品牌</a>
+          <a href="https://line.me/ti/p/~lanholi" target="_blank" class="btn-line">LINE 立即詢問</a>
+          <a href="tel:0983218658" class="btn-outline">撥打電話</a>
         </div>
       </div>
     </div>
@@ -731,9 +745,6 @@
 
     <div class="brands-layout">
       <div class="brands-sidebar">
-        <div class="brand-cat">鉗子 / 剪切</div>
-        <button class="brand-btn" data-brand="keiba" onclick="showBrand('keiba',this)"><span class="b-name">KEIBA 馬牌</span><span class="b-origin">JAPAN</span></button>
-        <button class="brand-btn" data-brand="3peaks" onclick="showBrand('3peaks',this)"><span class="b-name">3.PEAKS 小山</span><span class="b-origin">JAPAN</span></button>
         <div class="brand-cat">六角板手</div>
         <button class="brand-btn" data-brand="bondhus" onclick="showBrand('bondhus',this)"><span class="b-name">BONDHUS</span><span class="b-origin">USA</span></button>
         <button class="brand-btn" data-brand="eight" onclick="showBrand('eight',this)"><span class="b-name">EIGHT 六角棒</span><span class="b-origin">JAPAN</span></button>
@@ -741,13 +752,16 @@
         <button class="brand-btn" data-brand="wera" onclick="showBrand('wera',this)"><span class="b-name">WERA</span><span class="b-origin">GERMANY</span></button>
         <button class="brand-btn" data-brand="wiha" onclick="showBrand('wiha',this)"><span class="b-name">WIHA</span><span class="b-origin">GERMANY</span></button>
         <button class="brand-btn" data-brand="anex" onclick="showBrand('anex',this)"><span class="b-name">ANEX</span><span class="b-origin">JAPAN</span></button>
+        <div class="brand-cat">量測工具</div>
+        <button class="brand-btn" data-brand="mitutoyo" onclick="showBrand('mitutoyo',this)"><span class="b-name">Mitutoyo 三豐</span><span class="b-origin">JAPAN</span></button>
+        <button class="brand-btn" data-brand="kanon" onclick="showBrand('kanon',this)"><span class="b-name">KANON 中村</span><span class="b-origin">JAPAN</span></button>
+        <div class="brand-cat">鉗子 / 剪切</div>
+        <button class="brand-btn" data-brand="keiba" onclick="showBrand('keiba',this)"><span class="b-name">KEIBA 馬牌</span><span class="b-origin">JAPAN</span></button>
+        <button class="brand-btn" data-brand="3peaks" onclick="showBrand('3peaks',this)"><span class="b-name">3.PEAKS 小山</span><span class="b-origin">JAPAN</span></button>
         <div class="brand-cat">板手 / 扳手</div>
         <button class="brand-btn" data-brand="top" onclick="showBrand('top',this)"><span class="b-name">TOP トップ工業</span><span class="b-origin">JAPAN</span></button>
         <button class="brand-btn" data-brand="netsuren" onclick="showBrand('netsuren',this)"><span class="b-name">NETSUREN</span><span class="b-origin">JAPAN</span></button>
         <button class="brand-btn" data-brand="ikeda" onclick="showBrand('ikeda',this)"><span class="b-name">IKEDA</span><span class="b-origin">JAPAN</span></button>
-        <div class="brand-cat">量測工具</div>
-        <button class="brand-btn" data-brand="mitutoyo" onclick="showBrand('mitutoyo',this)"><span class="b-name">Mitutoyo 三豐</span><span class="b-origin">JAPAN</span></button>
-        <button class="brand-btn" data-brand="kanon" onclick="showBrand('kanon',this)"><span class="b-name">KANON 中村</span><span class="b-origin">JAPAN</span></button>
         <div class="brand-cat">絲攻</div>
         <button class="brand-btn" data-brand="htd" onclick="showBrand('htd',this)"><span class="b-name">H.T.D 早坂</span><span class="b-origin">JAPAN</span></button>
       </div>
@@ -755,16 +769,6 @@
         <!-- 預設品牌總覽 -->
         <div class="brand-panel active" id="panel-welcome">
           <div class="brand-intro">
-            <div class="brand-intro-item">
-              <div class="brand-intro-name">KEIBA 馬牌</div>
-              <div class="brand-intro-desc">日本新潟三條市創立，專業鉗類工具領導品牌。以精密鍛造技術聞名，斜口鉗、尖嘴鉗等產品深受日本職人信賴，品質穩定、切斷力優異。</div>
-              <a href="#" onclick="event.preventDefault();showBrand('keiba')" class="brand-intro-more">MORE →</a>
-            </div>
-            <div class="brand-intro-item">
-              <div class="brand-intro-name">3.PEAKS 小山</div>
-              <div class="brand-intro-desc">日本新潟精密鉗類品牌，以超薄刃設計聞名。模型鉗、電子鉗等產品廣泛應用於精密加工與模型製作，刀口鋒利、切面平整。</div>
-              <a href="#" onclick="event.preventDefault();showBrand('3peaks')" class="brand-intro-more">MORE →</a>
-            </div>
             <div class="brand-intro-item">
               <div class="brand-intro-name">BONDHUS</div>
               <div class="brand-intro-desc">美國明尼蘇達州製造，球型六角板手的發明者。獨家 Protanium 高強度鋼材，使用壽命超越一般六角板手數倍，是專業維修人員的必備工具。</div>
@@ -791,6 +795,26 @@
               <a href="#" onclick="event.preventDefault();showBrand('anex')" class="brand-intro-more">MORE →</a>
             </div>
             <div class="brand-intro-item">
+              <div class="brand-intro-name">Mitutoyo 三豐</div>
+              <div class="brand-intro-desc">日本精密量測儀器第一品牌，游標卡尺、分厘卡、量錶等產品為全球製造業標準配備，精度與耐用性業界頂尖。</div>
+              <a href="#" onclick="event.preventDefault();showBrand('mitutoyo')" class="brand-intro-more">MORE →</a>
+            </div>
+            <div class="brand-intro-item">
+              <div class="brand-intro-name">KANON 中村製作所</div>
+              <div class="brand-intro-desc">日本扭力工具專業品牌，空轉式扭力起子系列以精準的扭力控制聞名，廣泛應用於電子組裝、精密機械等需要扭力管理的產業。</div>
+              <a href="#" onclick="event.preventDefault();showBrand('kanon')" class="brand-intro-more">MORE →</a>
+            </div>
+            <div class="brand-intro-item">
+              <div class="brand-intro-name">KEIBA 馬牌</div>
+              <div class="brand-intro-desc">日本新潟三條市創立，專業鉗類工具領導品牌。以精密鍛造技術聞名，斜口鉗、尖嘴鉗等產品深受日本職人信賴，品質穩定、切斷力優異。</div>
+              <a href="#" onclick="event.preventDefault();showBrand('keiba')" class="brand-intro-more">MORE →</a>
+            </div>
+            <div class="brand-intro-item">
+              <div class="brand-intro-name">3.PEAKS 小山</div>
+              <div class="brand-intro-desc">日本新潟精密鉗類品牌，以超薄刃設計聞名。模型鉗、電子鉗等產品廣泛應用於精密加工與模型製作，刀口鋒利、切面平整。</div>
+              <a href="#" onclick="event.preventDefault();showBrand('3peaks')" class="brand-intro-more">MORE →</a>
+            </div>
+            <div class="brand-intro-item">
               <div class="brand-intro-name">TOP トップ工業</div>
               <div class="brand-intro-desc">日本新潟縣三條市製造，專業建築用手工具品牌。尖尾棘輪梅花扳手、活動板手等產品以高精度與耐久性著稱，深受建築現場專業人員信賴。</div>
               <a href="#" onclick="event.preventDefault();showBrand('top')" class="brand-intro-more">MORE →</a>
@@ -804,16 +828,6 @@
               <div class="brand-intro-name">IKEDA</div>
               <div class="brand-intro-desc">日本梅開板手專業製造商，公制與英制全尺寸齊備。鍛造精度高、開口準確，適用於機械組裝與設備維護。</div>
               <a href="#" onclick="event.preventDefault();showBrand('ikeda')" class="brand-intro-more">MORE →</a>
-            </div>
-            <div class="brand-intro-item">
-              <div class="brand-intro-name">Mitutoyo 三豐</div>
-              <div class="brand-intro-desc">日本精密量測儀器第一品牌，游標卡尺、分厘卡、量錶等產品為全球製造業標準配備，精度與耐用性業界頂尖。</div>
-              <a href="#" onclick="event.preventDefault();showBrand('mitutoyo')" class="brand-intro-more">MORE →</a>
-            </div>
-            <div class="brand-intro-item">
-              <div class="brand-intro-name">KANON 中村製作所</div>
-              <div class="brand-intro-desc">日本扭力工具專業品牌，空轉式扭力起子系列以精準的扭力控制聞名，廣泛應用於電子組裝、精密機械等需要扭力管理的產業。</div>
-              <a href="#" onclick="event.preventDefault();showBrand('kanon')" class="brand-intro-more">MORE →</a>
             </div>
             <div class="brand-intro-item">
               <div class="brand-intro-name">H.T.D 早坂</div>
@@ -1414,6 +1428,7 @@
             <div class="contact-item-label">LINE 諮詢</div>
             <div class="contact-item-value">搜尋 0983-218658 加好友</div>
             <div class="contact-item-note">LINE ID 即電話號碼｜找不到想要的商品？直接傳 LINE 詢問</div>
+            <a href="https://line.me/ti/p/~lanholi" target="_blank" style="display:inline-block;margin-top:12px;background:#06C755;color:#fff;text-decoration:none;font-size:15px;font-weight:700;padding:14px 32px;border-radius:4px;letter-spacing:0.05em;transition:background 0.2s;">加入 LINE 好友 立即詢問 →</a>
           </div>
         </div>
         <div class="contact-item">
